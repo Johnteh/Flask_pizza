@@ -10,10 +10,14 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///pizza.db'
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
+
+from flaskpizza import routes
 # Pass the required route to the decorator.
-@app.route("/hello")
-def hello():
-    return "Hello, Welcome to GeeksForGeeks"
+@app.route("/")
+@app.route("/home")
+def home():
+    return {'message': "Hello, Welcome to test my api"
+        }
 
 
 

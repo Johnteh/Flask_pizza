@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request, abort
-from models import Restaurant, Pizza, RestaurantPizza, db
-from app import app
+from flaskpizza.models import Restaurant, Pizza, RestaurantPizza, db
+from flaskpizza import app
 
 
 

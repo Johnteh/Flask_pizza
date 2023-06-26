@@ -7,7 +7,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///pizza.db'
 db = SQLAlchemy(app)
 
 # Import your models here
-from app import Restaurant, Pizza, RestaurantPizza
+from flaskpizza.models import Restaurant, Pizza, RestaurantPizza
 
 # Define some test data
 def create_test_data():
